@@ -1,38 +1,47 @@
-import Capa from "../../assets/card_imgs/capa1.svg";
 import Code from "../../assets/card_imgs/code.svg";
 import Chat from "../../assets/card_imgs/chat.svg";
 import Share from "../../assets/card_imgs/share.svg";
-import Icone from "../../assets/card_imgs/avatar.svg";
+import "./Card.css";
 
-const Card = () => {
+const Card = ({
+    id, 
+    imagemUrl, 
+    titulo, 
+    resumo, 
+    linhasDeCodigo, 
+    compartilhamentos, 
+    comentarios, 
+    usuario
+}) => {
+
     return (
         <article className="card">
             <div className="cardImagem">
-                <img src={Capa} alt="Imagem do post" />
+                <img src={imagemUrl} alt="Imagem do post" />
             </div>
             <div className="cardConteudo">
                 <div className="cardConteudoTexto">
-                    <h3>Título do post</h3>
-                    <p>Resumo do post</p>
+                    <h3>{titulo}</h3>
+                    <p>{resumo}</p>
                 </div>
-                <div>
+                <div className="conteudoRodape">
                     <ul>
                         <li>
                             <img src={Code} alt="Códigos" />
-                            100
+                            {linhasDeCodigo}
                         </li>
                         <li>
                             <img src={Share} alt="Compartilhamentos" />
-                            12
+                            {compartilhamentos}
                         </li>
                         <li>
                             <img src={Chat} alt="Comentários" />
-                            10
+                            {comentarios}
                         </li>
                     </ul>
                     <div className="rodaUsuario">
-                        <img src={Icone} alt="Imagem do usuario" />
-                        @vini
+                        <img src={usuario.imagem} alt="Imagem do usuario" />
+                        {usuario.nome}
                     </div>
                 </div>
             </div>
