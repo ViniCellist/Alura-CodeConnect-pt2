@@ -5,7 +5,6 @@ import Info from '../../assets/sidebar_imgs/info.svg';
 import Logout from '../../assets/sidebar_imgs/logout.svg';
 import Account from '../../assets/sidebar_imgs/account_circle.svg';
 
-
 const Sidebar = () => {
     return (
         <aside className="barraLateral">
