@@ -5,7 +5,7 @@
     height: 49px;
     font-family: var(--font-prompt);
     font-size: 22px;
-    background: var(--cinza-escuro) url("../../assets/search_imgs/vai estar aqui") no-repeat 32px;
+    background: var(--cinza-escuro) url("../../assets/search_imgs/search.svg") no-repeat 32px;
     border: none;
     border-radius: 4px;
 }
