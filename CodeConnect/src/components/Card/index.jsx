@@ -1,8 +1,8 @@
-import Capa from "../../assets/card_imgs/arquivo";
-import Code from "../../assets/card_imgs/arquivo";
-import Chat from "../../assets/card_imgs/arquivo";
-import Share from "../../assets/card_imgs/arquivo";
-import Icone from "../../assets/card_imgs/arquivo";
+import Capa from "../../assets/card_imgs/capa1.svg";
+import Code from "../../assets/card_imgs/code.svg";
+import Chat from "../../assets/card_imgs/chat.svg";
+import Share from "../../assets/card_imgs/share.svg";
+import Icone from "../../assets/card_imgs/avatar.svg";
 
 const Card = () => {
     return (
